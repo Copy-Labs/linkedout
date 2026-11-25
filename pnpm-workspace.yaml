@@ -2,6 +2,11 @@ packages:
   - "apps/*"
   - "packages/*"
 
+overrides:
+  minimatch: ^11.0.8
+
 allowBuilds:
+  core-js: true
   esbuild: true
   msw: false
+  workerd: true

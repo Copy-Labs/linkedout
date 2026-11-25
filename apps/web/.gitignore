@@ -1,0 +1,5 @@
+
+.env.local
+.dev.vars
+.prod.vars
+.wrangler/
