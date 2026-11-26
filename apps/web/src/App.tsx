@@ -1,3 +1,5 @@
+import { MoonIcon, SunIcon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react";
 import { Button } from "@workspace/ui/components/button";
 import { Skeleton } from "@workspace/ui/components/skeleton";
 import { Suspense } from "react";
@@ -47,7 +49,11 @@ export function App() {
               aria-label="Toggle theme"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
-              <span className="text-sm">{theme === "dark" ? "☼" : "☾"}</span>
+              <HugeiconsIcon
+                icon={theme === "dark" ? SunIcon : MoonIcon}
+                strokeWidth={2}
+                className="size-4"
+              />
             </Button>
           </nav>
         </div>
